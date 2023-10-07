@@ -1,0 +1,80 @@
+\documentclass{article}
+
+%
+% 引入模板的style文件
+%
+\usepackage{homework}
+\usepackage{xeCJK} %中文包，正常显示中文
+\usepackage{ctex} %支持中文，不加这个包，参考文献几个大字显示为英文且出警告
+
+%
+% 封面
+%
+
+\title{
+	\includegraphics[scale = 0.45]{images/title/ucas-logo1.png}\\
+    \vspace{1in}
+    \textmd{\textbf{\hmwkClass\ \hmwkTitle}}\\
+    \textmd{\textbf{\hmwkSubTitle}}\\
+    \normalsize\vspace{0.1in}\small{\hmwkCompleteTime }\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ }}\\
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName \\ 
+	\hmwkAuthorStuID}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+
+%
+% 正文部分
+%
+\begin{document}
+
+
+\maketitle
+
+
+%\include{chapters/ch01}
+
+
+\pagebreak
+
+\begin{homeworkProblem}
+\textbf{1.分类和回归是机器学习中的经典模型，请分别阐述2者的定义和区别，并结合实际场景介绍2者的应用。}\\
+	{\color{blue}\textbf{答:}
+	}
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
+	\textbf{2.解释什么是过拟合和欠拟合，怎么降低过拟合？~\cite{zhu}。}\\
+{\color{blue}\textbf{答:}
+
+}
+	
+\end{homeworkProblem}
+
+
+%\pagebreak
+
+\begin{homeworkProblem}
+\textbf{3.什么是10次10折交叉验证？为什么要这么设计。}\\
+{\color{blue}\textbf{答:}
+
+}
+
+
+\end{homeworkProblem}
+
+
+
+
+% 引用文献
+\bibliographystyle{unsrt}  % unsrt:根据引用顺序编号
+\bibliography{refs}
+
+
+\end{document}
