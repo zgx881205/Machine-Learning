@@ -1,0 +1,103 @@
+\documentclass{article}
+
+%
+% 引入模板的style文件
+%
+\usepackage{homework}
+\usepackage{xeCJK} %中文包，正常显示中文
+\usepackage{ctex} %支持中文，不加这个包，参考文献几个大字显示为英文且出警告
+\usepackage{url}
+%
+% 封面
+%
+
+\title{
+	\includegraphics[scale = 0.45]{images/title/ucas-logo1.png}\\
+    \vspace{1in}
+    \textmd{\textbf{\hmwkClass\ \hmwkTitle}}\\
+    \textmd{\textbf{\hmwkSubTitle}}\\
+    \normalsize\vspace{0.1in}\small{\hmwkCompleteTime }\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ }}\\
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName \\ 
+	\hmwkAuthorStuID}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+
+%
+% 正文部分
+%
+\begin{document}
+
+
+\maketitle
+
+
+%\include{chapters/ch01}
+
+
+\pagebreak
+
+\begin{homeworkProblem}
+\textbf{1.现有一组数据，实际的恶意用户和非恶意用户数量分别为1109和14891。通过在线恶意用户检测模型对这些数据进行恶意用户检测，预测结果为：恶意用户和非恶意用户数量分别为2113和13887，其中准确预测的恶意用户数量为891，准确预测的非恶意用户数量为13669。(1).对混淆矩阵表~\ref{tab:F}中的空缺值进行填充；(2).请依据混淆矩阵分别计算模型的评价指标Precision,Recall,F-measure。}
+
+{\color{blue}\textbf{答:(1)混淆矩阵如下：}\\
+
+\begin{table}[htbp!]\centering
+	\caption{\textbf{混淆矩阵}}
+	\label{tab:F}
+\begin{tabular}{|c|ccc|c|}
+\hline
+& \multicolumn{3}{c|}{\textbf{预测类别}}    & {\textbf{合计}}    \\ \hline
+\multirow{4}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}实\\ 际 \\ 类\\ 别\end{tabular}}} & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{\textbf{类别=恶意用户}} & \textbf{类别=非恶意用户} &     \\ \cline{2-5} 
+& \multicolumn{1}{c|}{\textbf{类别=恶意用户}}  & \multicolumn{1}{c|}{\color{red}TP=}  & {\color{red}FN=}  & 1109  \\ \cline{2-5} 
+& \multicolumn{1}{c|}{\textbf{类别=非恶意用户}} & \multicolumn{1}{c|}{\color{red}FP=}  & {\color{red}TN=}         & 14891\\ \cline{2-5} 
+& \multicolumn{1}{c|}{\textbf{合计}}  & \multicolumn{1}{c|}{2113}    &{13887}  &{16000}  \\ \hline
+\end{tabular}
+\end{table}
+
+(2)\textbf{Precision,Recall,F-measure的计算过程如下:}\\
+\begin{equation}\label{equ:sigmod}
+\begin{aligned}
+Precision=\frac{}{},\\
+Recall=\frac{}{},\\
+F-measure=\frac{}{}.
+\end{aligned}
+\end{equation}
+}
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
+	\textbf{2. 请解释岭回归和Lasso回归的原理和应用场景。}\\
+{\color{blue}\textbf{答:}
+\begin{itemize}
+\item{\textbf{岭回归}:}
+\item{\textbf{Lasso回归}:}
+\end{itemize}
+
+}	
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
+	\textbf{3. 假设你有一组房屋的特征数据（如面积、卧室数量等）和对应的售价数据，你想使用机器学习回归模型来预测房屋的售价。请描述你会如何处理这个问题，并选择合适的回归算法。}\\
+{\color{blue}\textbf{答:}
+
+
+}	
+\end{homeworkProblem}
+
+
+
+
+% 引用文献 根据要求引用
+%\bibliographystyle{unsrt}  % unsrt:根据引用顺序编号
+%\bibliography{refs}
+
+
+\end{document}
